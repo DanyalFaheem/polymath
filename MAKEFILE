@@ -1,0 +1,13 @@
+install:
+	pip install	--upgrade pip && \
+	pip install -r requirements.txt
+
+format:
+	black polymath.py 
+
+lint:
+	pylint polymath.py
+
+codestyle:
+	pycodestyle --show-source --show-pep8 polymath.py
+
